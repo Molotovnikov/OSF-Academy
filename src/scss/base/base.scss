@@ -1,0 +1,110 @@
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background: #333333;
+    font-family: 'Varela', sans-serif;
+    font-size: 11pt;
+    font-weight: 300;
+    color: #656565;
+}
+
+
+h1, h2, h3
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    color: #2B3F48;
+}
+
+p, ol, ul
+{
+    margin-top: 0;
+}
+
+ol, ul
+{
+    padding: 0;
+    list-style: none;
+}
+
+ul.actions
+{
+    text-align: center;
+}
+    
+    ul.actions li
+    {
+    }
+
+p
+{
+    line-height: 180%;
+}
+
+strong
+{
+}
+
+a
+{
+    color: #0000FF;
+}
+
+a:hover
+{
+    text-decoration: none;
+}
+
+.container
+{
+    overflow: hidden;
+    margin: 0em auto;
+    width: 1000px;
+}
+
+/*********************************************************************************/
+/* Image Style                                                                   */
+/*********************************************************************************/
+
+.image
+{
+    display: inline-block;
+}
+
+.image img
+{
+    display: block;
+    width: 100%;
+}
+
+.image-full
+{
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.image-left
+{
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.image-centered
+{
+    display: block;
+    margin: 0 0 2em 0;
+}
+
+.image-centered img
+{
+    margin: 0 auto;
+    width: auto;
+}
