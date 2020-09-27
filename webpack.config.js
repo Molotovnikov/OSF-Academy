@@ -12,7 +12,12 @@ module.exports = {
             test:/\.(s*)css$/,
             use: [
                 miniCss.loader,
-                'css-loader',
+                {
+                    loader: 'css-loader',
+                    options: {
+                        url: false
+                    }
+                },
                 'sass-loader',
             ]
         }]
