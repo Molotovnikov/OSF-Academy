@@ -209,6 +209,11 @@
 .popular-items {
     width: 80%;
     margin: 0 auto;
+
+    h3{
+        text-align: center;
+        color: white;
+    }
 }
 
 .popular-items-wrapper {
@@ -218,6 +223,7 @@
     .card {
         width: calc(25% - 15px);
         margin: 0 20px 20px 0;
+        border-radius: 50%;
 
         &:nth-child(4n) {
             margin-right: 0;
@@ -225,6 +231,43 @@
     }
 
     .card-details {
-        
+        text-align: center;
+    }
+}
+.banner-theme {
+    float: left;
+    text-align: center;
+    color: white;
+    height: 600px;
+    background: url("../images/homepage/banner-theme-img.jpg");
+}
+.featured-products {
+    width: 80%;
+    margin: 0%;
+
+    h1{
+        text-align: center;
+        color: white;
+    }
+    h3{
+        text-align: center;
+        color: white;
+    }
+}
+.featured-products-blocks {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card {
+        width: calc(25% - 15px);
+        margin: 0 20px 20px 0;
+        border-radius: 50%;
+    }
+
+    .card-details {
+        text-align: center;
+    }
+    .card-status {
+        color: #84BC22;
     }
 }
