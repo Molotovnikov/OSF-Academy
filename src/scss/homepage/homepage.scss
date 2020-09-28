@@ -214,6 +214,16 @@
         text-align: center;
         color: white;
     }
+
+    button {
+        color: white;
+        text-transform: uppercase;
+        background: transparent;
+        padding: 5px 15px;
+        border: 1px solid white;
+        border-radius: 15px; 
+
+    }
 }
 
 .popular-items-wrapper {
@@ -232,6 +242,17 @@
 
     .card-details {
         text-align: center;
+    }
+
+    .card:hover{
+    float: left;
+    color: #1CC167;
+    opacity: 0.5;
+	text-align: center;
+    transition: 1s;
+    width: calc(25% - 15px);
+    margin: 0 20px 20px 0;
+    border-radius: 50%;
     }
 }
 .banner-theme {
