@@ -233,7 +233,7 @@
     .card {
         width: calc(25% - 15px);
         margin: 0 20px 20px 0;
-        border-radius: 50%;
+        
 
         &:nth-child(4n) {
             margin-right: 0;
@@ -243,36 +243,52 @@
     .card-details {
         text-align: center;
     }
+    .card:hover {
+        float: left;
+        background-color: #1CC167;
+        opacity: 1;
+	    text-align: center;
+        transition: 1s;
+        width: calc(25% - 15px);
+        margin: 0 20px 20px 0;
 
-    .card:hover{
-    float: left;
-    color: #1CC167;
-    opacity: 0.5;
-	text-align: center;
-    transition: 1s;
-    width: calc(25% - 15px);
-    margin: 0 20px 20px 0;
-    border-radius: 50%;
     }
 }
 .banner-theme {
-    float: left;
     text-align: center;
     color: white;
     height: 600px;
     background: url("../images/homepage/banner-theme-img.jpg");
+    
+
+    .banner-theme-block {
+        padding: 16%;
+        
+        h1 {
+           font-family: 'Lato-ExtraBold';
+           font-size: 47pt;
+        }
+        p {
+            font-size: 13pt;
+        }
+    }
 }
 .featured-products {
     width: 80%;
-    margin: 0%;
+    margin: 0% auto;
+    background-color:#262A32;
 
     h1{
         text-align: center;
         color: white;
+        font-family: 'Lato-ExtraBold';
+        font-size: 36pt;
     }
     h3{
         text-align: center;
         color: white;
+        font-family: 'Lato';
+           font-size: 18pt;
     }
 }
 .featured-products-blocks {
@@ -282,7 +298,10 @@
     .card {
         width: calc(25% - 15px);
         margin: 0 20px 20px 0;
-        border-radius: 50%;
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
     }
 
     .card-details {
@@ -290,5 +309,45 @@
     }
     .card-status {
         color: #84BC22;
+    }
+}
+.info-sale-block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 50px;
+    color: #08D2BD;
+    height: 198px;
+    margin: 0% auto;
+
+
+    img {
+        float:left;
+        margin: 4px 10px 2px 0px;
+        padding:6px;
+    }
+    h2{
+        color: #08D2BD;
+        font-family: 'Bold';
+        font-size: 18pt;
+    }
+    p {
+        font-family: 'Regular';
+        font-size: 14pt;
+    }
+}
+
+.footer-and-links {
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    padding: 0 50px;
+
+    .categories {
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 0 50px;
     }
 }
