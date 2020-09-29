@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "slick-carousel": "^1.8.1",
+    "start": "^5.1.0",
     "webpack": "^4.44.2"
   },
   "devDependencies": {

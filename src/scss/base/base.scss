@@ -7,9 +7,8 @@ body
 {
     margin: 0px;
     padding: 0px;
-    background: #333333;
     font-family: 'Varela', sans-serif;
-    font-size: 11pt;
+    font-size: 16px;
     font-weight: 300;
     color: #656565;
 }
@@ -34,22 +33,8 @@ ol, ul
     list-style: none;
 }
 
-ul.actions
-{
+ul.actions {
     text-align: center;
-}
-    
-    ul.actions li
-    {
-    }
-
-p
-{
-    line-height: 180%;
-}
-
-strong
-{
 }
 
 a
@@ -66,7 +51,6 @@ a:hover
 {
     overflow: hidden;
     margin: 0em auto;
-    width: 1000px;
 }
 
 /*********************************************************************************/

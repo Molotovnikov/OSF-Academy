@@ -108,111 +108,137 @@
         }
     }
 }
-
-.slick-slider {
-    width: 100%;
-}
-
-.carousel-wrapper {
-    position: relative;
-}
-
-.slick-track {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.slick-list {
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.slick-slide {
-    float: left;
-    height: 100%;
-    min-height: 1px;
-    outline: 0;
-    padding: 60px; 
-    background: url("../images/homepage/carousel-bg-image.jpg");
-    background-size: cover;
-}
-
-.carousel-content-wrapper {
-    width: 70%;
-    color: white;
-
-    p {
-        margin-top: 70px;
-    }
-
-    button {
-        color: white;
-        text-transform: uppercase;
-        background: transparent;
-        padding: 5px 15px;
-        border: 1px solid white;
-        border-radius: 15px;
-    }
-}
-
-.slick-dots {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+.carousel-sale{
     display: flex;
+    width: 90%;
 
-    button {
-        font-size: 0;
-        line-height: 0;
-        display: block;
-        width: 15px;
-        height: 15px;
-        padding: 5px;
-        cursor: pointer;
-        color: transparent;
-        border: 0;
-        outline: none;
-        background: transparent;
+    .slick-slider {
+        width: 80%;
+    }
+
+    .carousel-wrapper {
         position: relative;
-        margin-right: 5px;
+    }
 
-        &::before {
-            font-size: 6px;
-            line-height: 20px;
-            position: absolute;
-            top: 0;
-            left: 0;
+    .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .slick-slide {
+        float: left;
+        height: 100%;
+        min-height: 1px;
+        outline: 0;
+
+    }
+    .first-carousel{
+        padding: 60px; 
+        background: url("../images/homepage/carousel-bg-image.jpg");
+        background-size: cover;
+    }
+    .carousel-wrapper-second {
+        img{
+            width: 100%;
+        }
+    }
+
+    .carousel-content-wrapper {
+        width: 70%;
+        color: white;
+
+        p {
+            margin-top: 70px;
+        }
+
+        button {
+            color: white;
+            text-transform: uppercase;
+            background: transparent;
+            padding: 5px 15px;
+            border: 1px solid white;
+            border-radius: 15px;
+        }
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+
+        button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
             width: 15px;
             height: 15px;
-            content: '';
-            border: 1px solid white;
-            border-radius: 50%;
-            text-align: center;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            background: transparent;
+            position: relative;
+            margin-right: 5px;
+
+            &::before {
+                font-size: 6px;
+                line-height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 15px;
+                height: 15px;
+                content: '';
+                border: 1px solid white;
+                border-radius: 50%;
+                text-align: center;
+            }
+        }
+
+        .slick-active button {
+            &::before {
+                border: 3px solid white;
+            }
         }
     }
-
-    .slick-active button {
-        &::before {
-            border: 3px solid white;
+    .sale{
+        width: 20%;
+        .sale-green{
+            background: url("../images/homepage/sale.svg");
+            height: 60%;
+            h1{
+                font-size: 100;
+                color:white;
+            }
         }
     }
 }
-
 .popular-items {
+    background-color: #262A32;
+}
+
+.popular-items-inner {
     width: 80%;
     margin: 0 auto;
 
     h3{
         text-align: center;
-        color: white;
+        color: #08D2BD;
     }
 
     button {
@@ -222,6 +248,10 @@
         padding: 5px 15px;
         border: 1px solid white;
         border-radius: 15px; 
+        font-weight: 250px;
+        display: flex;
+         margin: 0% auto;
+        font-family: 'Lato';
 
     }
 }
@@ -233,25 +263,96 @@
     .card {
         width: calc(25% - 15px);
         margin: 0 20px 20px 0;
-        
+        position: relative;
 
         &:nth-child(4n) {
             margin-right: 0;
         }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1CC167; 
+            opacity: 0;
+        }
+
+        &:hover {
+            text-align: center;
+            transition: 1s;
+
+            &:after {
+                opacity: 0.7;
+            }
+
+            .buttons-wrapper {
+                display: block;
+                .button {
+                    color: white;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        .bottoms-hovers {
+            display: flex;
+            flex-direction: row;
+        }
+        .img_bottom {
+            width: 100%;
+            min-height: 290px;
+        }
+        .img_bottom_hover {
+            
+            background-color: white;
+            height: 60px;
+            min-height: 60px;
+            width: auto;
+            border-radius: 50%;
+        }
+
+        &:last-child {
+            &:after {
+                opacity: 0.7;    
+            }
+
+            img {
+                height: 100%;
+                min-height: none;
+            }
+
+            .card-details {
+                position: absolute;
+                bottom: 0;
+                left: 5px;
+                text-align: left;
+                width: 70%;
+                color: white;
+                z-index: 2;
+
+            }
+
+            &:after {
+                background: linear-gradient(#C9638A, #645585)
+
+            }
+        }
+    }
+
+    .buttons-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: none;
+        z-index: 2;
     }
 
     .card-details {
         text-align: center;
-    }
-    .card:hover {
-        float: left;
-        background-color: #1CC167;
-        opacity: 1;
-	    text-align: center;
-        transition: 1s;
-        width: calc(25% - 15px);
-        margin: 0 20px 20px 0;
-
     }
 }
 .banner-theme {
@@ -273,10 +374,14 @@
         }
     }
 }
+
+.featured-products-wrapper {
+    background-color:#262A32;
+}
+
 .featured-products {
     width: 80%;
     margin: 0% auto;
-    background-color:#262A32;
 
     h1{
         text-align: center;
@@ -288,12 +393,27 @@
         text-align: center;
         color: white;
         font-family: 'Lato';
-           font-size: 18pt;
+        font-size: 18pt;
+    }
+}
+
+.nav-carusel-hr{
+    display: flex;
+    color: white;
+    
+    .hr-ffprod {
+        display: flex;
+        width: 100%;
+        hr { 
+           border: 1px solid white;
+            width: 100%;
+        }
     }
 }
 .featured-products-blocks {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap; 
 
     .card {
         width: calc(25% - 15px);
@@ -306,6 +426,7 @@
 
     .card-details {
         text-align: center;
+
     }
     .card-status {
         color: #84BC22;
@@ -313,12 +434,14 @@
 }
 .info-sale-block {
     display: flex;
+
     align-items: center;
     position: relative;
     padding: 0 50px;
     color: #08D2BD;
     height: 198px;
     margin: 0% auto;
+    background: #45413E;
 
 
     img {
@@ -339,15 +462,36 @@
 
 .footer-and-links {
     display: flex;
-    align-items: center;
     position: relative;
     background-color: white;
     padding: 0 50px;
 
     .categories {
+        display: flex;
         justify-content: space-between;
-        align-items: center;
         position: relative;
         padding: 0 50px;
+        padding-right: 7%;
+
+        & > ul {
+            margin-top: 40px;
+            padding-right: 20%;
+            font-weight: 120px;
+            
+        }
+        .about {
+            padding-left: 0cm;
+        }
+    }
+
+    h2 {
+        color: #08D2BD;
+    }
+    .links{
+        padding-left: 10%;
+        color: #B1B1B1;
+        a {
+            padding-right: 5px;
+        }
     }
 }
