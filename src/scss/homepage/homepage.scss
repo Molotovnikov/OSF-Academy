@@ -86,6 +86,19 @@
         display: flex;
         align-items: center;
     }
+    .header-logo-all{
+        padding: 0%;
+    }
+    .header-logo-title{
+        color: #011847;
+        font-size: 32px;
+        font-family: "Lato-ExtraBold";
+    }
+    .header-logo-subtitle{
+        color: #84BC22;
+        font-size: 18px;
+        font-family: "Regular"; 
+    }
 
     .header-nav-subcategory {
         display: none;
@@ -111,6 +124,8 @@
 .carousel-sale{
     display: flex;
     width: 90%;
+    margin: 0 auto;
+
 
     .slick-slider {
         width: 80%;
@@ -148,6 +163,8 @@
         padding: 60px; 
         background: url("../images/homepage/carousel-bg-image.jpg");
         background-size: cover;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
     .carousel-wrapper-second {
         img{
@@ -221,9 +238,36 @@
         .sale-green{
             background: url("../images/homepage/sale.svg");
             height: 60%;
-            h1{
-                font-size: 100;
+            text-align: center;
+            border-radius: 15px;
+            .saleperc{
+                font-size: 100px;
+                font-family: "Lato-ExtraBold";
+                
+            }
+            p{
+                font-size: 30px;
                 color:white;
+            }
+        }
+        .sale-face{
+            text-align: center;
+           h2,h3{
+               color: #08D2BD;
+            }
+            h2{
+                font-size: 18px;
+            }
+            h3{
+                font-size: 13px;
+            }
+            a{
+                color: blue;
+                display: inline-block;
+                border: 2px solid blue;
+                border-radius: 15px;
+                padding: 5px 10px;
+                margin-top: 10px;
             }
         }
     }
@@ -235,10 +279,12 @@
 .popular-items-inner {
     width: 80%;
     margin: 0 auto;
+    padding: 20px;
 
     h3{
         text-align: center;
         color: #08D2BD;
+        padding: 20px;
     }
 
     button {
@@ -250,7 +296,7 @@
         border-radius: 15px; 
         font-weight: 250px;
         display: flex;
-         margin: 0% auto;
+        margin: 0 auto ;
         font-family: 'Lato';
 
     }
@@ -312,6 +358,8 @@
             min-height: 60px;
             width: auto;
             border-radius: 50%;
+            padding: 10px;
+
         }
 
         &:last-child {
@@ -380,7 +428,7 @@
 }
 
 .featured-products {
-    width: 80%;
+    width: 100%;
     margin: 0% auto;
 
     h1{
@@ -412,15 +460,17 @@
 }
 .featured-products-blocks {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap; 
 
     .card {
         width: calc(25% - 15px);
-        margin: 0 20px 20px 0;
+        margin: 20px;
+        img{
+            width: 100%;
+        }
 
         &:nth-child(4n) {
-            margin-right: 0;
+            height: auto;
         }
     }
 
@@ -443,10 +493,12 @@
     margin: 0% auto;
     background: #45413E;
 
-
+.block{
+    width: 90%;
+}
     img {
         float:left;
-        margin: 4px 10px 2px 0px;
+        margin: 4px 10px 50px 0px;
         padding:6px;
     }
     h2{
@@ -455,7 +507,7 @@
         font-size: 18pt;
     }
     p {
-        font-family: 'Regular';
+        font-family: 'Lato';
         font-size: 14pt;
     }
 }
@@ -464,7 +516,9 @@
     display: flex;
     position: relative;
     background-color: white;
-    padding: 0 50px;
+    padding: 0 50px 0 30px;
+    font-family: "Lato";
+    font-size: 13px;
 
     .categories {
         display: flex;
@@ -475,7 +529,7 @@
 
         & > ul {
             margin-top: 40px;
-            padding-right: 20%;
+            padding-right: 15%;
             font-weight: 120px;
             
         }
@@ -488,8 +542,9 @@
         color: #08D2BD;
     }
     .links{
-        padding-left: 10%;
+        padding-left: 5%;
         color: #B1B1B1;
+        width: 20%;
         a {
             padding-right: 5px;
         }
