@@ -27,12 +27,17 @@ $('.carousel-wrapper-second').slick({
 $(".current-year").text(year);
 
 // ajax call to Products
-// $.ajax({
-//     url: './data.json',
-//     dataType: 'json',
-//     crossDomain: true,
-//     method: 'GET',
-//     success: function(data) {
-//         console.log(data)
-//     }
-// });
+
+$(".Loadmore").on("click", function () {
+    
+    $.ajax({
+        url: './data.json',
+        dataType: 'json',
+        crossDomain: true,
+        method: 'GET',
+        success: function(data) {
+            
+        }
+    });
+
+});
